@@ -6,7 +6,7 @@
   
   .card {
     width: 100%;
-    max-width: 400px;
+    max-width: 100vw;
   }
   
   .card-header {
@@ -24,4 +24,6 @@
     background-color: #0056b3;
     border-color: #0056b3;
   }
-  
+  .loginimg{
+    height: 87px;
+  }

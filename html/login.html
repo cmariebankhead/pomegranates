@@ -16,34 +16,58 @@
   
 </head>
   <body style="--bs-body-color: #333">
-    <div class="container">
-        <div class="row justify-content-center mt-5">
-          <div class="col-md-6">
-            <div class="card">
-              <div class="card-header">
-                <h3 class="text-center">Login</h3>
-              </div>
-              <div class="card-body">
-                <form id="loginForm">
-                  <div class="mb-3">
-                    <label for="email" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="email" required>
+    <section class="vh-50 w-100" style="background-color: #f80b3e;">
+      <div class="container-fluid py-5 h-50 w-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col col-xl-10">
+            <div class="card" style="border-radius: 7rem;">
+              <div class="row g-0">
+                <div class="col-md-6 col-lg-5 d-none d-md-block">
+                  <img src="../images/3photooffruit.gif"
+                    alt="login form" class="img-fluid loginimg  h-100 justify-content-center align-items-center p-3" style="border-radius: 27rem 27rem 27rem 27rem;" />
                   </div>
-                  <div class="mb-3">
-                    <label for="password" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="password" required>
+                <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                  <div class="card-body p-4 p-lg-5 text-black">
+    
+                    <form>
+    
+                      <div class="d-flex align-items-center mb-3 pb-1">
+                        <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i>
+                        <span class="h1 fw-bold mb-0">Pomegranate Farm</span>
+                      </div>
+    
+                      <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Sign into your account</h5>
+    
+                      <div data-mdb-input-init class="form-outline mb-4">
+                        <input type="email" id="form2Example17" class="form-control form-control-lg" />
+                        <label class="form-label" for="form2Example17">Email address</label>
+                      </div>
+    
+                      <div data-mdb-input-init class="form-outline mb-4">
+                        <input type="password" id="form2Example27" class="form-control form-control-lg" />
+                        <label class="form-label" for="form2Example27">Password</label>
+                      </div>
+    
+                      <div class="pt-1 mb-4">
+                        <button onclick="redirectToURL()" data-mdb-button-init data-mdb-ripple-init  class="btn btn-dark btn-lg btn-block" type="button">Login</button>
+                      </div>
+    
+                      <a class="small text-muted" href="#!">Forgot password?</a>
+                      <p class="mb-5 pb-lg-2" style="color: #393f81;">Don't have an account? <a href="../html/signup.html"
+                          style="color: #393f81;">Register here</a></p>
+                      <a href="#!" class="small text-muted">Terms of use.</a>
+                      <a href="#!" class="small text-muted">Privacy policy</a>
+                    </form>
+    
                   </div>
-                  <button type="submit" class="btn btn-primary" ><a href="../index.html"></a> Login</button>
-                </form>
-              </div>
-              <div class="card-footer">
-                <p class="text-center">Don't have an account? <a href="../html/signup.html">Sign up</a></p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-   <footer>
+    </section>
+         <footer>
     <p> Copyright 2024 </p>
    </footer>
 
@@ -51,5 +75,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <!-- Custom JavaScript -->
     <script src="./app.js"></script>
+    <script>
+      function redirectToURL() {
+        window.location.href = '../index.html';
+      }
+    </script>
+
   </body>
 </html>
